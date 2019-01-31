@@ -70,6 +70,7 @@ const send = (
           )
         );
       } catch (error) {
+        console.error(error);
         return dispatch(handleJsError(error));
       }
     })
